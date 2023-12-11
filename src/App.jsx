@@ -7,7 +7,7 @@ const App =()=> {
   const [count, setCount] = useState(0)
 
   return (
-    <div>Work vtf!</div>
+    <div>Work vtf let's go!!</div>
   )
 }
 

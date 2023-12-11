@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/react.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import {Home} from "./pages/Home/Home";
 
-const App =()=> {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div>Work vtf let's go!!</div>
+    <>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
+    </>
   )
-}
+};
 
-export default App
+export default App;

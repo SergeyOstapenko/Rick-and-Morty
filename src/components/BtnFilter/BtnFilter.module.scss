@@ -1,0 +1,16 @@
+.btn {
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 16px 46px;
+  display: inline-block;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+}

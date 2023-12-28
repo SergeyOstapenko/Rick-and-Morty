@@ -3,6 +3,7 @@ import { Header } from "../../components/Header/Header";
 import { Hero } from "../../components/Hero/Hero";
 import { Section } from "../../components/Section/Section";
 import { Footer } from "../../components/Footer/Footer";
+import { ApiData } from "../../serviceApi/ApiData";
 
 export const Home = () => {
   return (
@@ -12,7 +13,18 @@ export const Home = () => {
         <Hero />
       </Section>
       <Section>
-        <DescriptionList />
+        <ApiData apiUrl="https://rickandmortyapi.com/api/character/" render={({ data, loading, error }) => (
+          <>
+            {loading ? (
+              <p>Loading...</p>
+            ) : error ? (
+              <p>Error: {error.message}</p>
+            ) : (
+              <DescriptionList items={data} />
+            )}
+          </>
+        )} 
+        />
       </Section>
 
       <Footer />

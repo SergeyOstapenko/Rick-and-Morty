@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
-import { About } from "./pages/About/About";
+import { CreatureCard } from "./components/CreatureCard/CreatureCard";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About/>}/>
+          <Route exact path="/creature/:id" element={<CreatureCard/>}/>
         </Routes>
       </BrowserRouter>
     </>

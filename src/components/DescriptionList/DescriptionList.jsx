@@ -1,6 +1,8 @@
 import { DescriptionListItem } from "./DescriptionListItem/DescriptionListItem";
 import styles from "./DescriptionList.module.scss";
 import { BtnFilter } from "../BtnFilter/BtnFilter";
+import { BtnFab } from "../BtnFab/BtnFab";
+
 
 export const DescriptionList = ({ items }) => {
 
@@ -14,6 +16,7 @@ export const DescriptionList = ({ items }) => {
           <DescriptionListItem key={id} name={name} image={image} status={status} species={species} id={id}/>
         ))}
       </ul>
+      <BtnFab/>
     </div>
   );
 };

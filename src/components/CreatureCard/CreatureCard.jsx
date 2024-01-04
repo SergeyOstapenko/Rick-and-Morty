@@ -39,10 +39,9 @@ console.log(typeof(id));
 
             return (
               <div className="container card">
-                <img src={selectedCard.image} alt={selectedCard.name} />
-                <div>
-                  {/* Ваш код для отображения остальной информации о герое */}
-                  <h2>{selectedCard.name}</h2>
+                <img src={selectedCard.image} alt={selectedCard.name} width='595px' />
+                <div className={styles.info}>
+                  <h2 className={styles.title}>{selectedCard.name}</h2>
                   <p>Другие детали...</p>
                 </div>
               </div>

@@ -3,6 +3,7 @@
   --footer-text-color: #9e9e9e;
   --btn-color:#F5F5F5;
   --btn-text-color:#272B33;
+  --title-color: #F5F5F5;
 }
 
 #root {
@@ -77,4 +78,5 @@ img {
 .card {
   background-color: #272B33;
   padding: 79px 110px 252px 110px;
+  display: flex;
 }

@@ -8,7 +8,6 @@ import { ApiData } from "../../serviceApi/ApiData";
 
 export const CreatureCard = () => {
   const { id } = useParams();
-console.log(typeof(id));
   return (
     <>
       <Header />
@@ -30,8 +29,10 @@ console.log(typeof(id));
             if (!data || data.length === 0) {
               return <p>No data available.</p>;
             }
-                
-            const selectedCard = data.find((creature) => creature.id===Number(id)); 
+
+            const selectedCard = data.find(
+              (creature) => creature.id === Number(id)
+            );
 
             if (!selectedCard) {
               return <p>Creature not found.</p>;
@@ -39,7 +40,11 @@ console.log(typeof(id));
 
             return (
               <div className="container card">
-                <img src={selectedCard.image} alt={selectedCard.name} width='595px' />
+                <img
+                  src={selectedCard.image}
+                  alt={selectedCard.name}
+                  width="595px"
+                />
                 <div className={styles.info}>
                   <h2 className={styles.title}>{selectedCard.name}</h2>
                   <p>Другие детали...</p>

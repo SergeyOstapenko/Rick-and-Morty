@@ -16,7 +16,7 @@ export const BtnFilter = () => {
         <>
         <button className={styles.btn} onClick={handleButtonClick}>{buttonText}</button>
         {showAdditionalMenu && (
-            <div>
+            <div className={styles.showMenu}>
               <input type="text" placeholder="Search 1" />
               <input type="text" placeholder="Search 2" />
               <input type="text" placeholder="Search 3" />

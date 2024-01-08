@@ -40,7 +40,7 @@ export const CreatureCard = () => {
 
             return (
               <div className="container card">
-                <img
+                <img className={styles.image}
                   src={selectedCard.image}
                   alt={selectedCard.name}
                   width="595px"
